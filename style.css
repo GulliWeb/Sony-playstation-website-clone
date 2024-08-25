@@ -1,0 +1,124 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Utils */
+.blue{
+    color: rgb(46, 108, 193);
+}
+
+.bg-blue{
+    background-color: rgb(46, 108, 193);
+    color: white;
+}
+
+/* Header */
+header h1{
+    padding: 6px 7px;
+    height: fit-content;
+
+    background-color: black;
+    color: white;
+
+    font-weight: 400;
+    font-size: 20px;
+    text-align: end;
+}
+
+/* Nav */
+nav{
+    display: flex;
+    margin: 0 22px;
+}
+
+nav figure{
+    margin: 0 0 0 ;
+}
+
+nav ul li a:hover{
+    color: rgb(46, 108, 193);
+}
+
+/* Nav Left */
+nav .left{
+    flex-basis: 70%;
+}
+
+nav ul{
+    margin-bottom: 0;
+}
+
+nav ul li i{
+    margin-left: 5px;
+
+    position: relative;
+    top: 2px;
+
+    color: gray;
+    font-size: smaller;
+}
+
+nav .left li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+nav a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Nav Right */
+nav .right{
+    flex-grow: 1;
+}
+
+nav .right li{
+    list-style: none;
+    align-self: center;
+}
+
+nav .right button{
+    margin-left: 20px;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 5px 10px;
+    background-color: #333;
+}
+
+nav .right button:hover{
+    background-color: rgb(34, 83, 148);
+}
+
+nav .right button:active{
+    background-color: rgb(46, 108, 193);
+}
+
+nav .right i{
+    color: #333;
+    margin-left: 20px;
+}
+
+nav .right i:hover{
+    color: rgb(46, 108, 193);
+}
+
+nav .right i:active{
+    color: rgb(34, 83, 148);
+}
+
+
+
