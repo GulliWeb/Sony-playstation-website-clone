@@ -17,34 +17,59 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 figure{
     overflow: hidden;
 }
 
-img{
+iframe{
+    height: 770px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.5s ease; 
+    z-index: 1; 
+}
+
+.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+img, iframe{
     width: 100%;
     max-height: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
 
-/* Utils */
+#btn-accedi{
+    border: none;
+    padding: 5px 15px;
+}
 .button-def{
     padding: 10px 15px;
     border-radius: 25px;
     font-size: 15px;
     font-weight: bold;
-    background-color: white
+    background-color: white;
+
 }
 
 .blue{
-    color: rgb(46, 108, 193);
+    color: rgb(47, 110, 197);
 }
 
-.bg-blue{
-    background-color: rgb(46, 108, 193);
+.bg-def-blue{
+    background-color: rgb(47, 110, 197);
     color: white;
+}
+
+.hidden {
+    opacity: 0; /* Nascosto */
 }
 
 /* Header */
@@ -73,7 +98,7 @@ nav figure{
 }
 
 nav ul li a:hover{
-    color: rgb(46, 108, 193);
+    color: rgb(47, 110, 197);
 }
 
 /* Nav Left */
@@ -117,7 +142,6 @@ nav .right button{
     border-radius: 20px;
     height: fit-content;
     padding: 5px 10px;
-    background-color: #333;
 }
 
 nav .right button:hover{
@@ -149,13 +173,15 @@ nav .right i:active{
 
 .top-img-content{
     width: auto;
-    margin-left: 150px;
+    margin-left: 245px;
 
     top: 50%;
     transform: translateY(-50%);
 
     color: white;
     font-size: 18px;
+
+    transition: opacity 0.5s ease
 }
 
 .top-img-content h4{
@@ -195,5 +221,4 @@ nav .right i:active{
     color: black;
     cursor: pointer;
 }
-
 
