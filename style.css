@@ -221,3 +221,8 @@ nav .right i:active{
     cursor: pointer;
 }
 
+/* Carousel */
+.thumb-card{
+    height: 120px;
+    width: 210px;
+}

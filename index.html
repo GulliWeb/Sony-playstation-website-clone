@@ -15,58 +15,64 @@
     <title>Sito ufficiale PlayStation® clone</title>
 </head>
 <body>
-    <!-- Header page-->
-     <header>
-        <h1>SONY</h1>
-     </header>
-     <!-- Nav -->
-      <nav>
-        <div class="left d-flex align-items-center">
-            <figure>
-                <img src="img/play_logo.svg" alt="">
+    <section id="Thumbnails">
+        <!-- Header page-->
+        <header>
+            <h1>SONY</h1>
+        </header>
+        <!-- Nav -->
+        <nav>
+            <div class="left d-flex align-items-center">
+                <figure>
+                    <img src="img/play_logo.svg" alt="">
+                </figure>
+                <ul>
+                    <li><a href="#">Giochi</a><i class="fas fa-angle-down"></i></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Hardware</a><i class="fas fa-angle-down"></i></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Servizi</a><i class="fas fa-angle-down"></i></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Novità</a><i class="fas fa-angle-down"></i></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Fai acquisti</a><i class="fas fa-angle-down"></i></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Supporto</a><i class="fas fa-angle-down"></i></li>
+                </ul>
+            </div>
+            <div class="right d-flex justify-content-end align-items-center">
+                <ul>
+                    <li><a href="#">My Playstation</a><i class="fas fa-angle-down" style="margin-left: 5px;"></i></li>
+                </ul>
+                <button id="btn-accedi" type="button" class="bg-def-blue">Accedi</button>
+                <i class="bi bi-search"></i>
+            </div>
+        </nav>
+        
+        <!-- Section top page image -->
+        <div class="top-img-container position-relative">
+            <figure id="video">
+                <img id="gtaImg" src="img/gta.jpg" alt = "Grand Theft Auto VI" srcset="">
             </figure>
-            <ul>
-                <li><a href="#">Giochi</a><i class="fas fa-angle-down"></i></li>
-            </ul>
-            <ul>
-                <li><a href="#">Hardware</a><i class="fas fa-angle-down"></i></li>
-            </ul>
-            <ul>
-                <li><a href="#">Servizi</a><i class="fas fa-angle-down"></i></li>
-            </ul>
-            <ul>
-                <li><a href="#">Novità</a><i class="fas fa-angle-down"></i></li>
-            </ul>
-            <ul>
-                <li><a href="#">Fai acquisti</a><i class="fas fa-angle-down"></i></li>
-            </ul>
-            <ul>
-                <li><a href="#">Supporto</a><i class="fas fa-angle-down"></i></li>
-            </ul>
+            <!-- Img content -->
+            <div class="top-img-content position-absolute">
+                <figure>
+                    <img src="img/grand_theft_auto_vi_logo_png__by_emannyc01_dgj5wme-414w-2x.png" alt="">
+                </figure>
+                <h4>GTA VI STA ARRIVANDO</h4>
+                <p>Domina le strade di Vice City: la città è tua, sfruttala al massimo! <br> presto disponibile, in anteprima su PS5.</p>
+                <button id="btn-trailer" class="button-def">Guarda il trailer</button>
+            </div>
         </div>
-        <div class="right d-flex justify-content-end align-items-center">
-            <ul>
-                <li><a href="#">My Playstation</a><i class="fas fa-angle-down" style="margin-left: 5px;"></i></li>
-            </ul>
-            <button id="btn-accedi" type="button" class="bg-def-blue">Accedi</button>
-            <i class="bi bi-search"></i>
-        </div>
-      </nav>
+    </section>
 
-      <!-- Section top page image -->
-       <div class="top-img-container position-relative">
-        <figure id="video">
-            <img id="gtaImg" src="img/gta.jpg" alt = "Grand Theft Auto VI" srcset="">
-        </figure>
-        <!-- Img content -->
-         <div class="top-img-content position-absolute">
-            <figure>
-                <img src="img/grand_theft_auto_vi_logo_png__by_emannyc01_dgj5wme-414w-2x.png" alt="">
-            </figure>
-            <h4>GTA VI STA ARRIVANDO</h4>
-            <p>Domina le strade di Vice City: la città è tua, sfruttala al massimo! <br> presto disponibile, in anteprima su PS5.</p>
-            <button id="btn-trailer" class="button-def">Guarda il trailer</button>
-         </div>
-       </div>
-</body>
-</html>
+    <!-- Carousel -->
+    <section id="carousel" class="d-flex justify-content-center">
+    </section>
+    </body>
+    </html>
