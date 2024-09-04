@@ -183,6 +183,12 @@ nav .right i:active{
     transition: opacity 0.5s ease
 }
 
+.carousel-img-content{
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
 .top-img-content h4{
     font-size: 40px;
     font-family: 'SST', Arial, sans-serif;
@@ -223,6 +229,11 @@ nav .right i:active{
 
 /* Carousel */
 .thumb-card{
-    height: 120px;
-    width: 210px;
+    width: 260px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.thumb-card:hover{
+   transform: translateY(-10px);
+   box-shadow: 0 12px 6px rgba(0, 0, 0, 0.2);
 }
